@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    text-decoration: none;
+    color:  white;
+}
+
+.inicio{
+    background-image: url("../img/bg-reloj.webp");
+    background-position: center;
+    background-size: cover;
+    height:100vh;  
+}
+
+.inicio-dama {
+    background-image: url("/img/relojes-dama/fondo-dama.webp");
+}
+
+.name-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.navbar {
+    background: linear-gradient(90deg, #0b3e27, #197149);
+    padding: .3rem;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1rem, 1rem + 0.3125vw, 1rem);
+    transition: all .5s ease-in-out;
+    border-radius: .5rem;
+}
+
+.nav-link:hover {
+    background: #197149;
+    color: white;
+}
+
+.nav-link:active {
+    background: #197149;
+    color: white;
+}
+
+.btn-search {
+    color: white;
+    border: solid 1px white;
+}
+
+.btn-search:hover {
+    background: #1d4633;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.card {
+    margin: 0 auto;
+    width: 18rem;
+    .card-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.4rem;
+    }
+    .card-text {
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.col {
+    margin-top: 2rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(90deg, #0b3e27, #197149);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.social-network-list,
+.footer-rights-reserved {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.social-network-list {
+    justify-content: space-around;
+    cursor: pointer;
+    list-style: none;
+}
+
+.social-network-icons:hover {
+    color: yellow;
+    scale: 1.1;
+}
+
+.social-network-icons {
+    transition: all .3s ease-in-out;
+}
+
+.link-politicas {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.division-container {
+    margin-bottom: 2rem;
+    background-color: #197149;
+    
+}
+
+.division-div {
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (width < 728px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (width < 688px) {
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+
+        .footer-rights-reserved {
+            gap: .5rem;
+        }
+
+        .social-network-icons {
+            margin-top: 1rem;
+        }
+    }
+
+
+    
+}
